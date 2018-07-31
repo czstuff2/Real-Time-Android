@@ -1,0 +1,84 @@
+<div data-role="page" id="playersPage">
+
+  <div data-role="header" id="holeHeader">
+      <a id="homeBtn" class="ui-btn ui-btn-left ui-icon-home ui-btn-icon-notext" href="../index.html" rel="external"></a>
+    <h1 id=headerHoleText>Hole #</h1>
+      <a id="scoresBtn" class="ui-btn ui-btn-right ui-icon-info ui-btn-icon-notext" href="../scores.html" rel="external">Scores</a>
+  </div>
+
+  <div data-role="content" id="holeContent">
+
+  <div data-role="header" id="first2Tee">
+
+    <h1>First2Tee</h1>
+
+    <form><div class="ui-field-contain"><input type="range" name="slider_first2Tee" id="slider_id" min="1" max="10" value="3" data-show-value="true" data-mini="true"></div></form>
+
+   <div id="first2Tee-button" style="text-align:center"><a data-icon="grid" data-iconpos="right" data-role="button" href="javascript:nextPlayer()">Next</a></div>
+
+  </div>
+
+  <div data-role="header" id="second2Tee">
+
+    <h1>Second2Tee</h1>
+
+    <form><div class="ui-field-contain"><input type="range" name="slider_second2Tee" id="slider_second2Tee" min="1" max="10" value="3" data-show-value="true" data-mini="true"></div></form>
+
+    <div id="second2Tee-button" style="text-align:center"><a data-icon="grid" data-iconpos="right" data-role="button" href="javascript:nextPlayer()">Next</a></div>
+
+  </div>
+
+  <div data-role="header" id="third2Tee">
+
+    <h1>Third2Tee</h1>
+
+    <form><div class="ui-field-contain"><input type="range" name="slider_third2Tee" id="slider_third2Tee" min="1" max="10" value="3" data-show-value="true" data-mini="true"></div></form>
+
+    <div id="third2Tee-button" style="text-align:center"><a data-icon="grid" data-iconpos="right" data-role="button" href="javascript:nextPlayer()">Next</a></div>
+
+  </div>
+
+  <div data-role="header" id="fourth2Tee">
+
+    <h1>Fourth2Tee</h1>
+
+    <form><div class="ui-field-contain"><input type="range" name="slider_fourth2Tee" id="slider_fourth2Tee" min="1" max="10" value="3" data-show-value="true" data-mini="true"></div></form>
+
+    <div id="fourth2Tee-button" style="text-align:center"><a data-icon="grid" data-iconpos="right" data-role="button" href="javascript:nextPlayer()">Next</a></div>
+
+  </div>
+
+  <div data-role="header" id="fifth2Tee">
+
+    <h1>Fifth2Tee</h1>
+
+    <form><div class="ui-field-contain"><input type="range" name="slider_fifth2Tee" id="slider_fifth2Tee" min="1" max="10" value="3" data-show-value="true" data-mini="true"></div></form>
+
+    <div id="fifthTee-button" style="text-align:center"><a data-icon="grid" data-iconpos="right" data-role="button" href="javascript:submitHole()">Submit</a></div>
+
+  </div>
+
+  
+
+  
+
+    
+
+  </div>
+
+  
+
+  <div data-role="footer">
+
+    <div class="footer" data-role="controlgroup" data-type="horizontal">
+        <a id="logoutBtn" class="ui-btn ui-btn-right ui-icon-user" href="javascript:userLogout()" rel="external">Logout</a>
+    </div>
+
+  </div>
+
+  <div data-role="popup" id="confirmDialog" data-dismissible="false">
+
+  	</div>
+
+</div>
+

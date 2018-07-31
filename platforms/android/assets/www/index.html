@@ -1,0 +1,86 @@
+<!doctype html>
+<html>
+<head>
+    <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
+    <meta name='viewport' content="initial-scale=1, maximum-scale=1" />
+    <!--<meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />-->
+<meta charset="utf-8">
+    <meta name="format-detection" content="telephone=no" />
+<meta HTTP-EQUIV="EXPIRES" CONTENT="0">
+<title>Home</title>
+
+    <link rel="stylesheet" href="css/jquery.mobile-1.4.2.min.css" />
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery.mobile-1.4.2.min.js"></script>
+    <script src="js/fastbuttons.js"></script>
+    <link rel="stylesheet" href="css/index.css" />
+</head>
+<body>
+<div data-role="page" id="index">
+  <div data-role="header" id="header">
+       <div class="logoHolder">
+           <img id="Logo" src="img/logo.png" >
+           <div>
+               <strong>Because Chris Anderson is better than you</strong>
+           </div>
+       </div>
+      <div data-role="navbar" data-grid="b" class="navbar">
+          <ul>
+              <li><a href="javascript:scorekeeper()" data-icon="grid" class="ui-btn-icon-notext float ui-hov">Scorekeeper</a></li>
+              <li><a href="scores.html" rel="external" data-icon="info" class="ui-btn-icon-notext float ui-hov">Scores</a></li>
+              <li><a href="javascript:admin()" data-icon="gear" class="ui-btn-icon-notext float ui-hov">Admin</a></li>
+          </ul>
+      </div><!-- /navbar -->
+  </div>
+  <div data-role="content" id="#content">
+      <div id="contentWrap">
+          <div class="ui-grid-a">
+              <div class="ui-block-a">
+                  <div class="ui-bar ui-bar-a">
+                      <p>Please make sure to be @ Elon Park by 10 AM</p>
+                      <p>Every Saturday...ready to rock n roll</p>
+                  </div>
+                  <div class="ui-bar ui-bar-a">
+                      <p>Please make sure to be @ Elon Park by 10 AM</p>
+                      <p>Every Saturday...ready to rock n roll</p>
+                  </div>
+
+              </div>
+              <div class="ui-block-b"><div class="ui-bar ui-bar-a" style="height:40%">
+                  <img id="chrisFACE" src="img/chrissFACE.jpg" >
+              </div></div>
+          </div><!-- /grid-a -->
+      </div>
+      <div data-role="popup" id="adminlogin">
+      </div>
+      <div data-role="popup" id="login">
+      </div>
+  </div>
+  <div data-role="footer">
+    <div class="footer" data-role="controlgroup" data-type="horizontal">
+    </div>
+  </div>
+</div>
+
+
+<script src="js/players.js"></script>
+<script>
+    onDeviceReady: {
+        // Native loading spinner
+        if (window.spinnerplugin) {
+            $.extend($.mobile, {
+                loading: function() {
+                    // Show/hide spinner
+                    var arg = arguments ? arguments[0] : '';
+                    if (arg == 'show') spinnerplugin.show({'overlay':true});
+                    else if (arg == 'hide') spinnerplugin.hide();
+
+                    // Compatibility with jQM 1.4
+                    return { loader: function() { } }
+                }
+            });
+        }
+    }
+</script>
+</body>
+</html>
